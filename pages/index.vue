@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div>
+    <!-- <div>
       <Logo />
       <h1 class="title">
         my-portfolio
@@ -23,15 +23,10 @@
           GitHub
         </a>
       </div>
-    </div>
+    </div> -->
+    <h1>novo content</h1>
   </div>
 </template>
-
-<script lang="ts">
-import Vue from 'vue'
-
-export default Vue.extend({})
-</script>
 
 <style>
 .container {

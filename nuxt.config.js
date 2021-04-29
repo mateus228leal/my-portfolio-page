@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'my-portfolio',
+    title: '👨‍💻 Mateus (Drew) Leal | Web Developer',
     htmlAttrs: {
       lang: 'pt-BR'
     },
@@ -17,10 +17,13 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    { src: 'vue-material/dist/vue-material.min.css', lang: 'css' },
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    { src: '~/plugins/vue-material.js' },
+    { src: '~/plugins/vue-vanta.js' }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -38,5 +41,7 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    vendor: ['vue-material'],
+    transpile: ['vue-vanta']
   }
 }

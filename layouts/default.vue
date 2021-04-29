@@ -1,16 +1,35 @@
 <template>
   <div>
+    <v-vanta effect="waves" :options=options></v-vanta>
     <Nuxt />
   </div>
 </template>
 
+<script>
+import Vue from 'vue';
+import VVanta from 'vue-vanta';
+
+export default Vue.extend({
+    components: { VVanta },
+    data () {
+      return {
+        options: {
+            mouseControls: true,
+            touchControls: true,
+            minHeight: 500.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00
+        }
+      }
+    }
+  })
+</script>
+
 <style>
 html {
+  color: white;
   font-family:
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
     Roboto,
     'Helvetica Neue',
     Arial,
@@ -59,4 +78,12 @@ html {
   color: #fff;
   background-color: #35495e;
 }
+
+canvas{
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:-1 !important;
+  height: 100vh !important;
+} 
 </style>
