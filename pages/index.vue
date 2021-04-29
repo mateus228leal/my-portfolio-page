@@ -1,32 +1,15 @@
 <template>
   <div class="container">
-    <!-- <div>
-      <Logo />
-      <h1 class="title">
-        my-portfolio
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div> -->
-    <h1>novo content</h1>
+    <Me/>
   </div>
 </template>
+
+<script>
+
+export default {
+  
+}
+</script>
 
 <style>
 .container {
