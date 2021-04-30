@@ -24,7 +24,9 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     { src: '~/plugins/vue-material.js' },
-    { src: '~/plugins/vue-vanta.js' }
+    { src: '~/plugins/vue-vanta.js' },
+    { src: '@/plugins/vue-material-design-icons', mode: 'client' },
+    '~/plugins/axios'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -38,12 +40,19 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    '@nuxtjs/style-resources'
+    '@nuxtjs/style-resources',
+    '@nuxtjs/axios'
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    vendor: ['vue-material'],
-    transpile: ['vue-vanta']
+    vendor: ['vue-vanta','vue-material'],
+    transpile: ['vue-vanta','vue-material']
   },
+
+  publicRuntimeConfig: {
+    axios: {
+      githubBaseURL: 'https://api.github.com/'
+    }
+  }
 }

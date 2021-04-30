@@ -16,8 +16,8 @@ export default Vue.extend({
         options: {
             mouseControls: true,
             touchControls: true,
-            minHeight: 500.00,
-            minWidth: 200.00,
+            minHeight: 450.00,
+            minWidth: 0.00,
             scale: 1.00,
             scaleMobile: 1.00
         }
@@ -86,4 +86,10 @@ canvas{
   z-index:-1 !important;
   height: 100vh !important;
 } 
+
+@media only screen and (max-width: 991.98px) {
+  html {
+    font-size: 14px;
+  }
+}
 </style>
