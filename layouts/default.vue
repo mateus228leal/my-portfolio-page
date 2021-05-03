@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <v-vanta effect="waves" :options=options></v-vanta>
-    <Header/>
+    <!-- <Header/> -->
     <Nuxt />
   </div>
 </template>
