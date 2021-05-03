@@ -1,14 +1,12 @@
 <template>
   <div>
-    
+    <h1>Blog, Soon</h1>
   </div>
 </template>
 
 <script>
 export default {
-  setup() {
-    
-  },
+
 }
 </script>
 

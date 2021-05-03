@@ -1,15 +1,15 @@
 <template>
   <div id="main">
     <img class="rounded" v-bind:src="linkGithubProfilePicture" alt="Me! Drew!">
-    <h1>Hi! My name is Mateus Leal, also known as Drew, I'm a JavaScript & PHP Web Developer.</h1>
+    <h1>Hi! My name is Mateus Leal, also known as Drew, I'm a JavaScript & PHP Web Developer. You can find me there:</h1>
     <div class="social">
       <a href="https://github.com/mateus228leal" target="_blank">
-        <github-icon class="icon-resized" :size="1000"/>
+        <github-icon class="icon-resized" :size="1000" />
       </a>
       <a href="https://stackoverflow.com/users/15743372/user15743372" target="_blank">
         <stackoverflow-icon class="icon-resized" :size="1000"/>
       </a>
-      <a href="https://twitter.com/thesidecharac" target="_blank">
+      <a href="https://twitter.com/aguycalleddrew" target="_blank">
         <twitter-icon class="icon-resized" :size="1000"/>
       </a>
       <a href="https://www.linkedin.com/in/mateus228leal/" target="_blank">
@@ -29,7 +29,7 @@
 </template>
 
 <script>
-import GitHubService from '~/services/gitHubService';
+import GitHubService from '../../services/githubService.js';
 
 export default ({
   data() {
@@ -38,9 +38,9 @@ export default ({
     }
   },
   async fetch() {
-    await GitHubService.getUser('mateus228leal').then(userData => {
-      const { data } = userData;
-      this.linkGithubProfilePicture = data.avatar_url;
+    this.linkGithubProfilePicture = await GitHubService.getUser('mateus228leal').then(res => {
+      const { data } = res;
+      return data.avatar_url;
     });
   }
 })
@@ -60,12 +60,17 @@ export default ({
 
 h1 {
   line-height: 1;
+  margin-bottom: 1rem;
 }
 
 .rounded {
   border-radius: 50%;
-  max-width: 20rem;
+  max-width: 15rem;
   margin-bottom: 2rem;
+
+  @media screen and (max-width: 766.98px) {
+    max-width: 10rem;
+  }
 }
 
 .social {
@@ -78,6 +83,21 @@ a .material-design-icon.icon-resized {
   height: 3rem;
   width: 3rem;
   color: white;
+  display: flex;
+  justify-content: center;
+  @media screen and (max-width: 567.98px) {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  @media screen and (max-width: 414px) {
+    height: .75rem;
+    width: .75rem;
+  }
+
+  :hover {
+    color: #031636;
+  }
 }
  
 a .material-design-icon.icon-resized {

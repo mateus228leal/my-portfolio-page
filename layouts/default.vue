@@ -1,6 +1,7 @@
 <template>
-  <div>
+  <div id="app">
     <v-vanta effect="waves" :options=options></v-vanta>
+    <Header/>
     <Nuxt />
   </div>
 </template>
@@ -10,11 +11,11 @@ import Vue from 'vue';
 import VVanta from 'vue-vanta';
 
 export default Vue.extend({
-    components: { VVanta },
+  components: { VVanta },
     data () {
       return {
         options: {
-            mouseControls: true,
+          mouseControls: true,
             touchControls: true,
             minHeight: 450.00,
             minWidth: 0.00,
@@ -22,6 +23,8 @@ export default Vue.extend({
             scaleMobile: 1.00
         }
       }
+    },
+    mounted() {
     }
   })
 </script>
@@ -48,6 +51,11 @@ html {
 *::after {
   box-sizing: border-box;
   margin: 0;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
 }
 
 .button--green {
