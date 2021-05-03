@@ -1,6 +1,6 @@
 <template>
-  <div id="main">
-    <img class="rounded" v-bind:src="linkGithubProfilePicture" alt="Me! Drew!">
+  <div class="mainWrapper">
+    <img class="rounded" v-bind:src="this.$store.state.linkGithubProfilePicture" alt="Me! Drew!">
     <h1>Hi! My name is Mateus Leal, also known as Drew, I'm a JavaScript & PHP Web Developer. You can find me there:</h1>
     <div class="social">
       <a href="https://github.com/mateus228leal" target="_blank">
@@ -29,30 +29,19 @@
 </template>
 
 <script>
-import GitHubService from '../../services/githubService.js';
-
-export default ({
-  data() {
-    return {
-      linkGithubProfilePicture: ''
-    }
-  },
-  async fetch() {
-    this.linkGithubProfilePicture = await GitHubService.getUser('mateus228leal').then(res => {
-      const { data } = res;
-      return data.avatar_url;
-    });
-  }
-})
+export default ({ })
 </script>
 
 
 <style lang="scss" scoped>
-#main {
-  max-width: 75vw;
+.mainWrapper {
+  @media screen and (min-width: 767px) {
+    max-width: 75vw;
+  }
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   img {
     align-self: center;
   }
@@ -68,7 +57,7 @@ h1 {
   max-width: 15rem;
   margin-bottom: 2rem;
 
-  @media screen and (max-width: 766.98px) {
+  @media screen and (max-width: 566.98px) {
     max-width: 10rem;
   }
 }
@@ -77,6 +66,14 @@ h1 {
   display: flex;
   justify-content: space-around;
   margin-top: 2rem;
+  width: 50vw;
+  @media screen and (max-width: 766.98px) {
+    width: 75vw;
+  }
+
+  @media screen and (max-width: 413.98px) {
+    width: 90vw;
+  }
 }
 
 a .material-design-icon.icon-resized {

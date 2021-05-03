@@ -4,3 +4,14 @@
 * {
   color:white;
 }
+
+.mainWrapper {
+  min-height: 75vh;
+  max-height: calc(100% - 10%);
+  overflow: hidden;
+
+  * {
+    display: block;
+    margin: 0 auto;
+  }
+}

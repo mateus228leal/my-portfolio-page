@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <v-vanta effect="waves" :options=options></v-vanta>
-    <Header/>
+    <!-- <Header/> -->
     <Nuxt />
   </div>
 </template>
@@ -18,13 +18,14 @@ export default Vue.extend({
           mouseControls: true,
             touchControls: true,
             minHeight: 450.00,
-            minWidth: 0.00,
+            minWidth: 450.00,
             scale: 1.00,
             scaleMobile: 1.00
         }
       }
     },
     mounted() {
+      this.$store.dispatch('fetchLinkGithubProfilePicture');
     }
   })
 </script>
@@ -44,6 +45,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 *,
@@ -55,37 +57,8 @@ html {
 
 #app {
   width: 100%;
-  height: 100%;
-}
-
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
-}
+  height: 100vh;
+} 
 
 canvas{
   position:absolute;
