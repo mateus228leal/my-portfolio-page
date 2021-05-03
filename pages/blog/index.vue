@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mainWrapper">
     <h1>Blog, Soon</h1>
   </div>
 </template>
