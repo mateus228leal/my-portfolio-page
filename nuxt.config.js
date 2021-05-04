@@ -57,5 +57,8 @@ export default {
       githubBaseURL: 'https://api.github.com/'
     }
   },
+  generate: {
+    dir:'public'
+  },
   target: 'static'
 }
