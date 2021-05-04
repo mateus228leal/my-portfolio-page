@@ -1,1 +1,2 @@
-web: nuxt generate && nuxt start
+worker: nuxt generate && nuxt start
+
