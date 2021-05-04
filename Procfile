@@ -1,2 +1,2 @@
-worker: nuxt generate && nuxt start
+worker: npm run generate && npm run start
 
