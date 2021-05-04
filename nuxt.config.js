@@ -56,9 +56,5 @@ export default {
     axios: {
       githubBaseURL: 'https://api.github.com/'
     }
-  },
-  generate: {
-    dir:'public'
-  },
-  target: 'static'
+  }
 }
