@@ -4,11 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt build",
+    "build": "nuxt generate",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "test": "jest",
-    "heroku-postbuild": "npm run build"
+    "test": "jest"
   },
   "heroku-run-build-script": true,
   "dependencies": {
