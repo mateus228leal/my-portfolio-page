@@ -81,7 +81,6 @@ a .material-design-icon.icon-resized {
   width: 3rem;
   color: white;
   display: flex;
-  justify-content: center;
   @media screen and (max-width: 567.98px) {
     height: 1.5rem;
     width: 1.5rem;

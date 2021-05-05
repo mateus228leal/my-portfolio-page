@@ -12,14 +12,14 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: '//fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700,400italic|Material+Icons' }
+      { rel: 'stylesheet', href: '//fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700,400italic|Material+Icons' },
+      { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css' }
     ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     { src: 'vue-material/dist/vue-material.min.css', lang: 'css' },
-    '@/assets/css/main.scss',
     { src: '~/assets/css/main.scss', lang: 'scss' }
   ],
 
@@ -27,8 +27,8 @@ export default {
   plugins: [
     { src: '~/plugins/vue-material.js' },
     { src: '~/plugins/vue-vanta.js' },
-    { src: '@/plugins/vue-material-design-icons', mode: 'client' },
-    '~/plugins/axios'
+    { src: '~/plugins/vue-material-design-icons.js', mode: 'client' }, 
+    { src: '~/plugins/axios.js'}
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

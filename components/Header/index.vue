@@ -3,8 +3,8 @@
     <md-tabs class="md-primary">
       <md-tab id="tab-home" md-label="Home" to="/"></md-tab>
       <md-tab id="tab-pages" md-label="Work" to="/work"></md-tab>
-      <md-tab id="tab-posts" md-label="Blog" to="/blog"></md-tab>
-      <md-tab id="tab-favorites" md-label="About" to="/about"></md-tab>
+      <!-- <md-tab id="tab-posts" md-label="Blog" to="/blog"></md-tab> -->
+      <!-- <md-tab id="tab-favorites" md-label="About" to="/about"></md-tab> -->
     </md-tabs>
   </div>
 </template>
