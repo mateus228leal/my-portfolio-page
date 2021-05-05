@@ -9,9 +9,15 @@
   min-height: 75vh;
   max-height: calc(100% - 10%);
   overflow: hidden;
+  padding-top: 2rem;
 
   * {
     display: block;
     margin: 0 auto;
   }
+}
+
+.md-list-item-content {
+  min-height: unset;
+  white-space: pre-line;
 }

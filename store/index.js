@@ -19,7 +19,6 @@ const createStore = () => {
       async fetchLinkGithubProfilePicture(context) {
         await GitHubService.getUser('mateus228leal').then(res => {
           const { data } = res;
-          console.log(data)
           context.commit('SET_LINK_GITHUB_PROFILE_PICTURE', data.avatar_url);
         })
         .catch(error => {
