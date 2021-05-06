@@ -10,6 +10,7 @@
   max-height: calc(100% - 10%);
   overflow: hidden;
   padding-top: 2rem;
+  overflow-y: auto;
 
   * {
     display: block;

@@ -16,11 +16,15 @@ export default Vue.extend({
       return {
         options: {
           mouseControls: true,
-            touchControls: true,
-            minHeight: 450.00,
-            minWidth: 450.00,
-            scale: 1.00,
-            scaleMobile: 1.00
+          touchControls: true,
+          minHeight: 450.00,
+          minWidth: 450.00,
+          scale: 1.00,
+          scaleMobile: 1.00,
+          color: 0x361d5f,
+          shininess: 0.00,
+          waveHeight: 28.50,
+          zoom: 0.85
         }
       }
     },
