@@ -72,7 +72,7 @@
       <h4>May/2021 - Current Job</h4>
       <md-divider></md-divider>
       <p>Pixter is a self titled "software boutique" focused on offering squads and technologies resources for large projects, by large clients.
-        Just joined recently in the goal to join the Back-End team whom creates NodeJS REST API's for serving data to Front-End apps. 
+        Just joined recently in the goal to join the Back-End team whom creates NodeJS REST API's for serving data to Front-End and Mobile apps. 
       </p>
       <md-divider></md-divider>
       <div class="techStack">
@@ -91,9 +91,6 @@ export default({
 </script>
 
 <style lang="scss" scoped>
-  .mainWrapper {
-    overflow-y: auto;
-  }
 
   * {
     display: block;
