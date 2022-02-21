@@ -72,14 +72,16 @@
       <h4>May/2021 - Current Job</h4>
       <md-divider></md-divider>
       <p>Pixter is a self titled "software boutique" focused on offering squads and technologies resources for large projects, by large clients.
-        Just joined recently in the goal to join the Back-End team whom creates NodeJS REST API's for serving data to Front-End and Mobile apps. 
+        My role is to develop RESTfull API's and sidekick on CMS applications.
       </p>
       <md-divider></md-divider>
       <div class="techStack">
-        <Icons techIcon="devicon-javascript-plain" tech="JavaScript"/>
+        <Icons techIcon="devicon-typescript-plain" tech="TypeScript"/>
+        <Icons techIcon="devicon-php-plain" tech="PHP"/>
         <Icons techIcon="devicon-nodejs-plain" tech="NodeJS"/>
         <Icons techIcon="devicon-express-original" tech="Express"/>
-        <Icons techIcon="devicon-mongodb-plain" tech="mongodb"/>
+        <Icons techIcon="devicon-firebase-plain" tech="Firebase"/>
+        <Icons techIcon="devicon-wordpress-plain" tech="Wordpress"/>
       </div>
     </md-content>
   </div>

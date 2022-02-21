@@ -9,20 +9,8 @@
       <a href="https://stackoverflow.com/users/15743372/user15743372" target="_blank">
         <stackoverflow-icon class="icon-resized" :size="1000"/>
       </a>
-      <a href="https://twitter.com/aguycalleddrew" target="_blank">
-        <twitter-icon class="icon-resized" :size="1000"/>
-      </a>
       <a href="https://www.linkedin.com/in/mateus228leal/" target="_blank">
         <linkedin-icon class="icon-resized" :size="1000"/>
-      </a>
-      <a href="https://open.spotify.com/user/12176800164" target="_blank">
-        <spotify-icon class="icon-resized" :size="1000"/>
-      </a>
-      <a href="https://www.instagram.com/aguycalleddrew/" target="_blank">
-        <instagram-icon class="icon-resized" :size="1000"/>
-      </a>
-      <a href="https://www.facebook.com/mateus.leal.12177276" target="_blank">
-        <facebook-icon class="icon-resized" :size="1000"/>
       </a>
     </div>
   </div>
